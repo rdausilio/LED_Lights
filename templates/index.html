@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            background-color: #ED1C1C; /* Red */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button2 {
+            background-color: #FF7E1C; /* Orange */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button3 {
+            background-color: #FFE41C; /* Yellow */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button4 {
+            background-color: #2AB225; /* Green */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button5 {
+            background-color: #1856B2; /* Blue */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button6 {
+            background-color: #8012A5; /* Purple */
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center">LED Lights</h1>
+
+<p title="AotL">
+    LED light strip color picker website.
+</p>
+
+<p>Enter a rgbw value and click the "Submit" button to choose a specific color or select a preset color.</p>
+
+<div style="text-align: center">
+    <button class="button">Red</button>
+    <button class="button2">Orange</button>
+    <button class="button3">Yellow</button>
+    <button class="button4">Green</button>
+    <button class="button5">Blue</button>
+    <button class="button6">Purple</button>
+</div>
+
+<form action="/pick_color.py">
+    R:<br>
+    <input type="number"><br>
+    G:<br>
+    <input type="number"><br>
+    B:<br>
+    <input type="number"><br>
+    W:<br>
+    <input type="number"><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
