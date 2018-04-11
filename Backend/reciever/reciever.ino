@@ -35,4 +35,10 @@ void loop() {
       strip.setPixelColor(j, strip.Color(recievedMessage[1][1], recievedMessage[1][2], recievedMessage[1][3]));
     strip.show();
   }
+
+//  if (radio.available()) {
+//    char text[32] = "";
+//    radio.read(&text, sizeof(text));
+//    Serial.println(text);
+  }
 }

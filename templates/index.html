@@ -99,12 +99,12 @@
 <p>Enter a rgbw value and click the "Submit" button to choose a specific color or select a preset color.</p>
 
 <div style="text-align: center">
-    <button class="button">Red</button>
-    <button class="button2">Orange</button>
-    <button class="button3">Yellow</button>
-    <button class="button4">Green</button>
-    <button class="button5">Blue</button>
-    <button class="button6">Purple</button>
+    <button class="button" onclick="alert('The LED light strip turns red!')">Red</button>
+    <button class="button2" onclick="alert('The LED light strip turns orange!')">Orange</button>
+    <button class="button3" onclick="alert('The LED light strip turns yellow!')">Yellow</button>
+    <button class="button4" onclick="alert('The LED light strip turns green!')">Green</button>
+    <button class="button5" onclick="alert('The LED light strip turns blue!')">Blue</button>
+    <button class="button6" onclick="alert('The LED light strip turns purple!')">Purple</button>
 </div>
 
 <form action="/pick_color.py">
@@ -113,8 +113,6 @@
     G:<br>
     <input type="number"><br>
     B:<br>
-    <input type="number"><br>
-    W:<br>
     <input type="number"><br>
     <input type="submit" value="Submit">
 

@@ -3,16 +3,24 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
+
+int val;
+int potpin = 0;
+
 RF24 radio(9, 10); // CE, CSN
-const byte address[6] = "00001";
+
+const uint64_t pipe = 0xE6E6E6E6E6E6; //needs to be the same
+
 void setup() {
+  Serial.begin(9600);
   radio.begin();
-  radio.openWritingPipe(address);
-  radio.setPALevel(RF24_PA_MIN);
+  radio.openWritingPipe(pipe);
   radio.stopListening();
 }
+
 void loop() {
-  const char text[] = "Hello World";
-  radio.write(&text, sizeof(text));
-  delay(1000);
+//  const char text[] = "help!";
+//  radio.write(&text, sizeof(text));
+//  delay(1000);
+  
 }
