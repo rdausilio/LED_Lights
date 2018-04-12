@@ -5,7 +5,6 @@
 #include <RF24.h>
 
 int val;
-int potpin = 0;
 
 RF24 radio(9, 10); // CE, CSN
 
@@ -15,12 +14,11 @@ void setup() {
   Serial.begin(9600);
   radio.begin();
   radio.openWritingPipe(pipe);
-  radio.stopListening();
 }
 
 void loop() {
-//  const char text[] = "help!";
-//  radio.write(&text, sizeof(text));
-//  delay(1000);
-  
+  int text[4] = {130, 179, 155, 0};
+  radio.write(&text, sizeof(text));
+  delay(100);
+
 }

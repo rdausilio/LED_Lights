@@ -4,8 +4,10 @@ LED Lightstrip project
 """
 
 from flask import Flask, render_template, jsonify
+from pick_color import Color_Picker
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -14,32 +16,32 @@ def index():
 
 @app.route('/red')
 def red():
-    return jsonify(237, 28, 28)
+    return jsonify(237, 28, 28, 0)
 
 
 @app.route('/orange')
 def orange():
-    return jsonify(255, 126, 28)
+    return jsonify(255, 126, 28, 0)
 
 
 @app.route('/yellow')
 def yellow():
-    return jsonify(255, 228, 28)
+    return jsonify(255, 228, 28, 0)
 
 
 @app.route('/green')
 def green():
-    return jsonify(42, 178, 37)
+    return jsonify(42, 178, 37, 0)
 
 
 @app.route('/blue')
 def blue():
-    return jsonify(24, 86, 178)
+    return jsonify(24, 86, 178, 0)
 
 
-@app.route('/violet')
-def violet():
-    return jsonify(128, 18, 165)
+@app.route('/purple')
+def purple():
+    return jsonify(128, 18, 165, 0)
 
 
 @app.route('/custom')

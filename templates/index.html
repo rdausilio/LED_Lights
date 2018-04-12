@@ -1,7 +1,11 @@
+<!-- Rowan D'Ausilio
+define document as html -->
+
 <!DOCTYPE html>
 <html>
 <head>
     <style>
+        /* inline css for the 6 different buttons. the only difference with them is the color so that it matches the rgb value*/
         .button {
             background-color: #ED1C1C; /* Red */
             border: none;
@@ -95,16 +99,28 @@
 <p title="AotL">
     LED light strip color picker website.
 </p>
-
+<!-- actually doesn't work yet -->
 <p>Enter a rgbw value and click the "Submit" button to choose a specific color or select a preset color.</p>
 
 <div style="text-align: center">
-    <button class="button" onclick="alert('The LED light strip turns red!')">Red</button>
-    <button class="button2" onclick="alert('The LED light strip turns orange!')">Orange</button>
-    <button class="button3" onclick="alert('The LED light strip turns yellow!')">Yellow</button>
-    <button class="button4" onclick="alert('The LED light strip turns green!')">Green</button>
-    <button class="button5" onclick="alert('The LED light strip turns blue!')">Blue</button>
-    <button class="button6" onclick="alert('The LED light strip turns purple!')">Purple</button>
+    <a class="btn btn-lg btn-success" href="/red" id="red">
+        <button class="button" onclick="alert('The LED light strip turns red!')">Red</button>
+    </a>
+    <a class="btn btn-lg btn-success" href="/orange" id="orange">
+        <button class="button2" onclick="alert('The LED light strip turns orange!')">Orange</button>
+    </a>
+    <a class="btn btn-lg btn-success" href="/yellow" id="yellow">
+        <button class="button3" onclick="alert('The LED light strip turns yellow!')">Yellow</button>
+    </a>
+    <a class="btn btn-lg btn-success" href="/green" id="green">
+        <button class="button4" onclick="alert('The LED light strip turns green!')">Green</button>
+    </a>
+    <a class="btn btn-lg btn-success" href="/blue" id="blue">
+        <button class="button5" onclick="alert('The LED light strip turns blue!')">Blue</button>
+    </a>
+    <a class="btn btn-lg btn-success" href="/purple" id="purple">
+        <button class="button6" onclick="alert('The LED light strip turns purple!')">Purple</button>
+    </a>
 </div>
 
 <form action="/pick_color.py">
@@ -113,6 +129,8 @@
     G:<br>
     <input type="number"><br>
     B:<br>
+    <input type="number"><br>
+    W:<br>
     <input type="number"><br>
     <input type="submit" value="Submit">
 
